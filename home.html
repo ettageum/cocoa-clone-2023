@@ -39,9 +39,34 @@
             autoplay
             src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3"
         ></audio>
-        <img
-            src="images/andrey-zvyagintsev-x0c6vTO5ibA-unsplash.jpg"
-            width="600px"
-        />
+        <img src="images/blacksuit Yuna(1).jpg" />
+        <form>
+            <label for="writeName">Name</label>
+            <input id="writeName" required placeholder="Name" type="text" />
+            <!-- write down 'for' and 'id' with samevalue -->
+            <label for="lastName">Last name</label>
+            <input
+                id="lastName"
+                required
+                placeholder="Last Name"
+                type="text"
+                disabled
+            />
+            <label for="userName">User name</label>
+            <input id="userName" required placeholder="User Name" type="text" />
+            <label for="password">Password</label>
+            <input
+                id="password"
+                required
+                placeholder="Password"
+                type="password"
+                minlength="10"
+            />
+            <label for="color">Color</label>
+            <input id="color" type="color" />
+            <label for="selectPhoto">Profile photo</label>
+            <input id="selectPhoto" type="file" accept=".doc, image/*" />
+            <input type="submit" value="Create Account" />
+        </form>
     </body>
 </html>
