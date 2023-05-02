@@ -1,3 +1,12 @@
 body {
-    background-color: bisque;
+    background-color: beige;
 }
+/* {} is curly bracket */
+h1 {
+    color: blue;
+}
+header {
+    color: aquamarine;
+    font-size: 20px;
+}
+/* color는 무시됐는데 font-size는 받아들여졌군 */
