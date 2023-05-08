@@ -1,3 +1,4 @@
+/* cascading means that it reads from top to bottom. */
 body {
     background-color: beige;
 }
@@ -9,4 +10,4 @@ header {
     color: aquamarine;
     font-size: 20px;
 }
-/* color는 무시됐는데 font-size는 받아들여졌군 */
+/* color는 무시됐는데 font-size는 받아들여졌어 부모속성보다 자식 속성이 우선된다는 거겠지 */
