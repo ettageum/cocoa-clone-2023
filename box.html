@@ -1,41 +1,64 @@
 <!DOCTYPE html>
 <html lang="kr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>It's all About box</title>
-    <link rel="stylesheet" href="box.css" />
-    <style>
-      div {
-        height: 150px;
-        width: 150px;
-        background-color: tomato;
-      }
-      span {
-        background-color: aquamarine;
-        font-size: 30px;
-      }
-      img {
-        height: 600px;
-      }
-    </style>
-  </head>
-  <body>
-    <div></div>
-    <div></div>
-    <!-- boxes not allow anything to next it. this calls box. opposite is inline, it means 'in the same line'. -->
-    <span>hello</span>
-    <span>hello</span>
-    <img src="images/andrey-zvyagintsev-x0c6vTO5ibA-unsplash.jpg" />
-    <a href="#">link</a>
-    <span>hello</span>
-    <p>
-      updates chromium if needed and re-applies patches. If the chromium version
-      did not change, it will only re-apply patches that have changed. Will
-      update child dependencies only if any project needed updating during this
-      script run.
-    </p>
-    <!-- Most boxes are block. If you wanna remember that what is not a block. -->
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Box-inline</title>
+        <link rel="stylesheet" href="box.css" />
+        <style>
+            html {
+                background-color: orange;
+            }
+            body {
+                background-color: rgb(144, 128, 173);
+                margin: 0px;
+            }
+            div {
+                margin: 50px;
+                <!-- margin is a space from the border of box's outside. -->
+                margin: 30px 50px;
+                /* top-bottom, left-right */
+                margin: 30px 50px 20px 60px;
+                /* top, right, bottom, left */
+                /* display: inline; */
+                /* If you add this property, boxes is disapper. because inline can not have
+                height and width. inline is not a box. */
+                height: 150px;
+                width: 150px;
+                background-color: tomato;
+            }
+            span {
+                /* display: block; */
+                background-color: aquamarine;
+                font-size: 30px;
+            }
+            img {
+                height: 600px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>a</div>
+        <div>a</div>
+        <!-- boxes not allow anything to next it. this calls box. opposite is inline, it means 'in the same line'. -->
+        <span>hello</span>
+        <span>hello</span>
+        <img src="images/andrey-zvyagintsev-x0c6vTO5ibA-unsplash.jpg" />
+        <a href="#">link</a>
+        <span>hello</span>
+        <p>
+            updates chromium if needed and re-applies patches. If the chromium
+            version did not change, it will only re-apply patches that have
+            changed. Will update child dependencies only if any project needed
+            updating during this script run.
+        </p>
+        <!-- Most boxes are block. If you wanna remember that what is not a block. -->
+        <h1>#3.4 Margin part one</h1>
+        <div></div>
+        <div></div>
+        <span>hello</span>
+        <span>hello</span>
+        <h1>#3.5 margin part two</h1>
+    </body>
 </html>

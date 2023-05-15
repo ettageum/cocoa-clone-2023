@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>#3.5 Margin part two</title>
+    <style>
+      html {
+        background-color: orange;
+      }
+      body {
+        margin: 20px;
+        padding: 20px;
+
+        background-color: blueviolet;
+      }
+      div {
+        padding: 10px;
+        background-color: beige;
+        height: 200px;
+        width: 200px;
+      }
+      #second {
+        background-color: aquamarine;
+        height: 150px;
+        width: 150px;
+      }
+      #third {
+        background-color: brown;
+        height: 100px;
+        width: 100px;
+      }
+      #fourth {
+        background-color: black;
+        height: 50px;
+        width: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>#3.6 Paddings and IDs</h1>
+    <div id="first">
+      <div id="second">
+        <div id="third">
+          <div id="fourth"></div>
+        </div>
+      </div>
+    </div>
+    <!-- collapsing margins -->
+    <!-- 두 박스의 경계선이 margin이 완벽하게 겹쳐질 경우 경계선이 붕괴해서 같이 움직이는 현상. -->
+  </body>
+</html>
