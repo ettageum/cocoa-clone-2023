@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="kr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>#3.5 Margin part two</title>
+    <title>cocoatalk</title>
     <style>
+      * {
+        border: 2px dotted black;
+      }
+      /* '*' means everything of html document. */
       html {
         background-color: orange;
       }
@@ -20,6 +24,8 @@
         background-color: beige;
         height: 200px;
         width: 200px;
+        border: solid 2px black;
+        border-style: dashed solid;
       }
       #second {
         background-color: aquamarine;
@@ -32,18 +38,22 @@
         width: 100px;
       }
       #fourth {
-        background-color: black;
+        background-color: silver;
         height: 50px;
         width: 50px;
       }
     </style>
   </head>
   <body>
+    <h1>#3.5 Margin part two</h1>
     <h1>#3.6 Paddings and IDs</h1>
+    <h1>#3.7 Border</h1>
     <div id="first">
       <div id="second">
         <div id="third">
-          <div id="fourth"></div>
+          <div id="fourth">
+            <span>hello</span>
+          </div>
         </div>
       </div>
     </div>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cocoatalk</title>
+    <style>
+      * {
+        border: 2px dotted black;
+      }
+      html {
+        background-color: antiquewhite;
+      }
+      body {
+        margin: 20px;
+      }
+      span {
+        background-color: aquamarine;
+        padding: 10px;
+        /* margin: 30px; */
+        /* inline dosen't have height and width. so dosen't have margin to top-bottom. */
+      }
+      #salmon1,
+      #salmon2,
+      #salmon3 {
+        background-color: salmon;
+      }
+      .tomato {
+        background-color: tomato;
+        color: white;
+      }
+      .btn {
+        padding: 10px 20px;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>#3.8 Classes</h1>
+    <span id="salmon1" class="btn">hello</span>
+    <span class="tomato btn">hello</span>
+    <span id="salmon2" class="btn">hello</span>
+    <span class="tomato btn hello honey potato">hello</span>
+    <!-- one property can have many of classes -->
+    <span id="salmon3" class="btn">hello</span>
+    <span class="tomato btn">hello</span>
+  </body>
+</html>
