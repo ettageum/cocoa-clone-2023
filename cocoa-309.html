@@ -9,7 +9,39 @@
       * {
         border: 2px dotted;
       }
+      html {
+        background-color: bisque;
+      }
+      body {
+        height: 100vh;
+        /* 'vh' means viewport height. */
+        display: flex;
+        /* DO not talk to the chidren, talk to the parent. */
+        justify-content: space-around;
+        align-items: flex-end;
+        /* 'justify-content'is on main axis, 'align-item'is on cross axis. */
+        /* align-items: stretch; */
+        /* 'strech' works when childen have no height value. */
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* flexbox는 browser의 요소 검사 창에서 보다 자세히 학습할 수 있다. */
+      }
+      div {
+        width: 200px;
+        height: 200px;
+        background-color: aquamarine;
+        /* display: inline-block; */
+        /* 'inline-block' is sucks. it dosen't support 'reponsive design' */
+      }
     </style>
+    <meta
+      content="#3.9 Inline Block, #3.10 Flexbox Part One, #3.11 Flexbox Part Two"
+    />
   </head>
-  <body></body>
+  <body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </body>
 </html>
