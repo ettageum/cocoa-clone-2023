@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>#3.14 Pseudo Selectors Part One</title>
+    <!-- 'pseudo selector' is more complex way of pointing at the elements. -->
+    <!-- We knew 3 ways to pointing elements. 'name', '#name', '.name'. -->
+    <style>
+      * {
+        border: 1px dotted;
+      }
+      html {
+        background-color: azure;
+      }
+      body {
+        height: 200vh;
+        display: flex;
+      }
+      div {
+        width: 80px;
+        height: 80px;
+        background-color: aquamarine;
+      }
+      div:last-child {
+        background-color: teal;
+      }
+      div:first-child {
+        background-color: tomato;
+      }
+      div:nth-child(even) {
+        background-color: blue;
+      }
+
+      /* this is much much better than make ID and classes. It dosen't need to touch HTML code. */
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </body>
+</html>

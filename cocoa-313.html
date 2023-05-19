@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>#3.13 Relative Absolute</title>
+    <style>
+      * {
+        border: 1px dotted;
+      }
+      body {
+        background-color: beige;
+        height: 200vh;
+        margin: 30px;
+      }
+      div {
+        width: 200px;
+        height: 200px;
+        background-color: aquamarine;
+        /* position: static; */
+        /* 'stasic' positions where it starts. default. */
+        position: relative;
+      }
+      .green {
+        background-color: yellowgreen;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        /* 'absolute' will align itself according to the closest 'relative' father. */
+        bottom: 0px;
+        right: 0px;
+      }
+      #absolute {
+        background-color: burlywood;
+        width: 250px;
+        height: 250px;
+        opacity: 0.4;
+        position: relative;
+        /* 'relative' positions modify it where it starts. */
+        left: 60px;
+        top: -40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="green"></div>
+    </div>
+    <div id="absolute"></div>
+  </body>
+</html>

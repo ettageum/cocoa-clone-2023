@@ -4,28 +4,42 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>cocoatalk</title>
+    <title>#3.12 Fixed</title>
     <style>
       * {
-        border: 2px dotted;
+        border: 1px dotted;
       }
       html {
         background-color: bisque;
       }
       body {
-        display: flex;
+        height: 200vh;
+        /* display: flex; */
       }
       div {
+        /* position: fixed; */
+        /* 'position' uses when you wanna move elements to little bit or fixed. */
         width: 200px;
         height: 200px;
         background-color: aquamarine;
       }
+      #aqua {
+        position: fixed;
+        opacity: 0.5;
+      }
+      #different {
+        /* position: fixed; */
+        /* top: 110px; */
+        /* left: 130px; */
+        /* 'position'에 방향성을 추가하면 더 이상 같은 layer에 머무르지 않고 위로 올라온다. */
+        background-color: rgb(61, 202, 80);
+        width: 250px;
+      }
     </style>
-    <meta content="#3.12 Fixed" />
   </head>
   <body>
-    <div></div>
-    <div></div>
-    <div></div>
+    <h1>안녕하세요.</h1>
+    <div id="aqua"></div>
+    <div id="different"></div>
   </body>
 </html>
