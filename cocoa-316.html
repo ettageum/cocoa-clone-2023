@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Selectors Part Two</title>
+    <style>
+      * {
+        border: 1px dotted;
+      }
+      html {
+        background-color: azure;
+      }
+      body {
+        width: 100vh;
+        height: 200vh;
+      }
+      /* div {
+        width: 300px;
+        height: 300px;
+        background-color: aquamarine;
+      } */
+      input:required {
+        border: 2px solid tomato;
+      }
+      input[type="password"] {
+        background-color: thistle;
+      }
+      input[placeholder~="name"] {
+        background-color: pink;
+      }
+      /* attribute를 통한 pseudo selector의 예시들.
+      [attribute selector MDN] */
+    </style>
+  </head>
+  <body>
+    <form>
+      <input type="text" placeholder="First name" />
+      <input type="text" placeholder="Last name" />
+      <input type="password" required placeholder="password" />
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam
+        praesentium ex harum, officia quis iste perspiciatis quae accusantium
+        amet ab, in expedita? Expedita at ratione, earum alias ab veritatis
+        dolore.
+      </p>
+    </form>
+  </body>
+</html>

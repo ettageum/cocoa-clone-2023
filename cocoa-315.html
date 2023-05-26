@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Combinators</title>
+    <style>
+      * {
+        border: 1px dotted;
+      }
+      html {
+        background-color: azure;
+      }
+      body {
+        height: 200vh;
+      }
+      div {
+        height: 200vh;
+      }
+      span {
+        color: tomato;
+        background-color: yellow;
+        padding: 3px;
+        border-radius: 10px;
+      }
+      div p span {
+        color: seagreen;
+      }
+      /* 'p' is parent selector, and 'span' is child selector.
+      ' ' means inside it. */
+      div > span {
+        text-decoration: underline;
+      }
+      /* 두 개의 span 중에서 첫 번째 'hello'만 꾸미고 싶을 때는'>'를 사용한다.
+      '>' means direct children. */
+      p + span {
+        font-size: 200%;
+      }
+      /* 'p' 직후에 오는 'span'을 꾸미고 싶을 때는 '+'를 사용한다.
+      '+' means next to it. */
+      p ~ span {
+        font-size: 200%;
+      }
+      /* '+' 와 달리 직후에 오지 않더라도 뒤에만 있으면 적용한다. */
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nemo
+        obcaecati sunt, error fugiat sint aspernatur laborum id iste, repellat
+        voluptatibus, illo corrupti omnis vel? Autem saepe perferendis quia
+        recusandae?<span>inside</span>
+      </p>
+      <address>New York</address>
+      <span>hello</span>
+    </div>
+  </body>
+</html>
