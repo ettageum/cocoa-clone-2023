@@ -53,9 +53,20 @@
         background-color: blanchedalmond;
       }
       form:hover input:focus {
-        background-color: brown;
+        background-color: rgb(165, 42, 42, 0.7);
       }
       /* 'F12' 에서 ':hov' 항목 참조 */
+      input::placeholder {
+        color: aqua;
+      }
+      p::first-letter {
+        font-size: 200%;
+        color: yellowgreen;
+      }
+      p::selection {
+        background-color: yellowgreen;
+        color: white;
+      }
     </style>
   </head>
   <body>
@@ -66,9 +77,14 @@
       <a href="https://apple.com">Go to Apple</a>
     </div>
     <form>
-      <input type="text" />
+      <input type="text" placeholder="name" />
       <input type="text" />
       <input type="text" />
     </form>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad voluptates
+      repellendus harum molestias quod animi totam similique nihil hic, ducimus
+      natus ullam qui facere! Delectus alias deserunt repellat id sint.
+    </p>
   </body>
 </html>

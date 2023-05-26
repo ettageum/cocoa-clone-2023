@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        --main-color: rgb(108, 115, 209);
+        --main-border: 2px solid var(--main-color);
+      }
+      /* 위를 이용하면 CSS를 programming language처럼 변수를 사용할 수 있다.
+      변수를 생성할 때는 '--'를 앞에 붙이고 띄어쓰기 대신 '-'를 사용한다. */
+      /* [CSS custom property] */
+      * {
+        border: 1px dotted;
+      }
+      html {
+        background-color: azure;
+      }
+      body {
+        width: 100vh;
+        height: 200vh;
+      }
+      p {
+        color: darkorange;
+        background-color: var(--main-color);
+        font-size: 20px;
+      }
+      a {
+        color: var(--main-color);
+        border: var(--main-border);
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere
+      blanditiis, incidunt eos tempora natus veniam assumenda placeat quisquam
+      enim fuga facilis unde velit ipsam hic, sed, temporibus fugit molestiae
+      tenetur.
+    </p>
+    <a href="#" target="_self">Nowwhere</a>
+  </body>
+</html>
