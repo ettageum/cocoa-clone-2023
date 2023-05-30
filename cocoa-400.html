@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transitions</title>
+    <style>
+      * {
+        border: 1px dotted;
+      }
+      html {
+        background-color: azure;
+      }
+      body {
+        width: 100vh;
+        height: 200vh;
+      }
+      a {
+        color: wheat;
+        background-color: tomato;
+        text-decoration: none;
+        padding: 3px 5px;
+        border-radius: 5px;
+        font-size: 60px;
+        transition: background-color 3s ease-in-out, color 10s ease-in-out,
+          border-radius 1s ease-in-out;
+        transition: all 0.6s ease-in-out;
+        /*  */
+        /* transition 은 state 가 없는 쪽에 효과를 줘야 한다.
+        transition 으로 변화를 주기 위해선 그에 대응하는 변화값이 있어야 한다. */
+      }
+      a:hover {
+        border-radius: 20px;
+        background-color: wheat;
+        color: tomato;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#">Go to home</a>
+    <a href="https://matthewlein.com/tools/ceaser" target="_blank">Ref.</a>
+  </body>
+</html>

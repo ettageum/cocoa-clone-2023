@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transformations</title>
+    <style>
+      * {
+        border: 1px dotted;
+      }
+      html {
+        background-color: azure;
+      }
+      body {
+        width: 100vh;
+        height: 100vh;
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+      }
+      a {
+        padding: 3px 5px;
+        font-size: 40px;
+        color: wheat;
+        background-color: tomato;
+        font-style: none;
+        border-radius: 10px;
+      }
+      img {
+        border: 5px solid brown;
+        border-radius: 50%;
+        transition: transform 1s ease-in-out;
+        /* transform 은 sibling 에 영향을 주진 않는다. 오직 자신만 움직인다.
+        일종의 3D transforming 이기 때문에 margin, padding 등의 요소도 적용되지 않게 된다.
+        마치 photosharp의 다른 레이어로 이동된 것처럼 인식된다. */
+      }
+      img:hover {
+        transform: scale(2, 2) translateX(50px);
+        transform: rotateY(45deg) rotateX(30deg) translateX(80px)
+          translateY(50px);
+      }
+    </style>
+  </head>
+  <body>
+    <img src="images/WhaleScreenCapture-20230331-164258.jpg" />
+    <span>hahahahahahahah</span>
+    <div>
+      <a
+        href="https://developer.mozilla.org/ko/docs/Web/CSS/transform"
+        target="_blank"
+        >ref</a
+      >
+    </div>
+  </body>
+</html>

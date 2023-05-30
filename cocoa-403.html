@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animations</title>
+    <style>
+      * {
+        border: 1px dotted black;
+      }
+      html {
+        background-color: azure;
+      }
+      body {
+        width: 100vh;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      a {
+        padding: 3px 5px;
+        font-size: 40px;
+        color: wheat;
+        background-color: tomato;
+        font-style: none;
+        border-radius: 10px;
+      }
+      img {
+        border: 5px solid brown;
+        border-radius: 50%;
+        animation: superCoinFlip 3s ease-in-out infinite;
+      }
+      @keyframes superCoinFlip {
+        0 {
+          transform: rotate(0);
+        }
+        25% {
+          border-radius: 20%;
+          opacity: 0;
+        }
+        50% {
+          transform: rotateX(360deg) translateX(50px);
+        }
+        75% {
+          transform: scale(2);
+        }
+        100% {
+          transform: rotate(0);
+        }
+      }
+      /* [@keyframe nameOfAnimation] is basic form of making animation to CSS. */
+    </style>
+  </head>
+  <body>
+    <img src="images/WhaleScreenCapture-20230331-164258.jpg" />
+    <div>
+      <a href="https://animista.net" target="_blank">ref</a>
+    </div>
+  </body>
+</html>
