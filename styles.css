@@ -1,0 +1,7 @@
+* {
+  border: 1px dotted black;
+}
+.status-bar {
+  display: flex;
+  justify-content: space-between;
+}
