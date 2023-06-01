@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome to cocoatalk</title>
-    <link href="styles.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
     <!-- By default Most of webservers are configure to look for 'index.html' first.
     'index' means first. -->
   </head>
@@ -13,7 +13,7 @@
     <div class="status-bar">
       <div class="status-bar__column">
         <span>No Service</span>
-        <i class="fas fa-wifi"></i>
+        <i class="fas fa-wifi fa-sm"></i>
         <!-- To-do: wifi Icon -->
       </div>
       <div class="status-bar__column">
@@ -21,7 +21,8 @@
       </div>
       <div class="status-bar__column">
         <span>110%</span>
-        <i class="fas fa-battery-full"></i>
+        <i class="fas fa-battery-full fa-lg"></i>
+        <!-- 'fa-lg' 는 여기서 아이콘의 크기를 조절하는 역할을 한다. -->
         <!-- battery icon -->
         <i class="fas fa-bolt"></i>
         <!-- lightcing icon -->
@@ -30,13 +31,13 @@
     </div>
 
     <header class="welcome-header">
-      <h1 class="welcome-header__title">Welcome to Cocoa Clone</h1>
+      <h1 class="welcome-header__title">Welcome to Cocoatalk</h1>
       <p class="welcome-header__text">
         If you have Cocoa Account, log in with your email or phone number.
       </p>
     </header>
 
-    <form id="loggin-form">
+    <form id="login-form">
       <input type="text" placeholder="Email or phone number" />
       <input type="text" placeholder="Password" />
       <input type="submit" value="Log in" />
