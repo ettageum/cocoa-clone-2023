@@ -1,0 +1,75 @@
+div:nth-child(even) {
+  background-color: blue;
+}
+form:focus-within {
+  border: 2px solid seagreen;
+}
+form:hover input {
+  background-color: blanchedalmond;
+}
+form:hover input:focus {
+  background-color: rgb(165, 42, 42, 0.7);
+}
+input:required {
+  border: 2px solid tomato;
+}
+input[type="password"] {
+  background-color: thistle;
+}
+input[placeholder~="name"] {
+  background-color: pink;
+}
+input::placeholder {
+  color: aqua;
+}
+p::first-letter {
+  font-size: 200%;
+  color: yellowgreen;
+}
+p::selection {
+  background-color: yellowgreen;
+  color: white;
+}
+
+.welcome-header__title {
+  margin-bottom: 40px;
+  font-size: 25px;
+  color: var(--yellow);
+}
+.status-bar__column:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+.staus-bar__column:first-child span {
+  margin-right: 5px;
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 30px;
+}
+#login-form input {
+  border: none;
+  padding: 11px 0px;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+#login-form input[type="submit"] {
+  background-color: var(--yellow);
+  cursor: pointer;
+  padding: 20px 0px;
+  border-radius: 5px;
+}
+#login-form input:focus {
+  border-color: var(--yellow);
+}
+#login-form input:not([type="submit"]) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  transition: border-color 0.5s ease-in-out;
+}
+#login-form input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+/* 어렵다. 내가 착각하던 게 있어. 여기서는 단순한 pseudo selector 뿐만 아니라 combinator까지 같이 봤어야 했던 거야. */
