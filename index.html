@@ -1,55 +1,56 @@
 <!DOCTYPE html>
 <html lang="kr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to cocoatalk</title>
-    <link href="css/styles.css" rel="stylesheet" />
-    <!-- By default Most of webservers are configure to look for 'index.html' first.
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Welcome to cocoatalk</title>
+        <link href="css/styles.css" rel="stylesheet" />
+        <!-- By default Most of webservers are configure to look for 'index.html' first.
     'index' means first. -->
-  </head>
-  <body>
-    <div class="status-bar">
-      <div class="status-bar__column">
-        <span>No Service</span>
-        <i class="fas fa-wifi fa-sm"></i>
-        <!-- To-do: wifi Icon -->
-      </div>
-      <div class="status-bar__column">
-        <span>18:43</span>
-      </div>
-      <div class="status-bar__column">
-        <span>110%</span>
-        <i class="fas fa-battery-full fa-lg"></i>
-        <!-- 'fa-lg' 는 여기서 아이콘의 크기를 조절하는 역할을 한다. -->
-        <!-- battery icon -->
-        <i class="fas fa-bolt"></i>
-        <!-- lightcing icon -->
-      </div>
-      <!-- 'father__child' this classname prevents repitition of class-name and easy to find where it uses. -->
-    </div>
+    </head>
+    <body>
+        <div class="status-bar">
+            <div class="status-bar__column">
+                <span>No Service</span>
+                <i class="fas fa-wifi fa-sm"></i>
+                <!-- To-do: wifi Icon -->
+            </div>
+            <div class="status-bar__column">
+                <span>18:43</span>
+            </div>
+            <div class="status-bar__column">
+                <span>110%</span>
+                <i class="fas fa-battery-full fa-lg"></i>
+                <!-- 'fa-lg' 는 여기서 아이콘의 크기를 조절하는 역할을 한다. -->
+                <!-- battery icon -->
+                <i class="fas fa-bolt"></i>
+                <!-- lightcing icon -->
+            </div>
+            <!-- 'father__child' this classname prevents repitition of class-name and easy to find where it uses. -->
+        </div>
 
-    <header class="welcome-header">
-      <h1 class="welcome-header__title">Welcome to Cocoatalk</h1>
-      <p class="welcome-header__text">
-        If you have Cocoa Account, log in with your email or phone number.
-      </p>
-    </header>
+        <header class="welcome-header">
+            <h1 class="welcome-header__title">Welcome to Cocoatalk</h1>
+            <p class="welcome-header__text">
+                If you have Cocoa Account, log in with your email or phone
+                number.
+            </p>
+        </header>
 
-    <form id="login-form">
-      <input type="text" placeholder="Email or phone number" />
-      <input type="text" placeholder="Password" />
-      <input type="submit" value="Log in" />
-      <a href="#">Find Cocoa Account or Password</a>
-    </form>
+        <form id="login-form">
+            <input type="text" placeholder="Email or phone number" />
+            <input type="text" placeholder="Password" />
+            <input type="submit" value="Log in" />
+            <a href="#">Find Cocoa Account or Password</a>
+        </form>
 
-    <script
-      src="https://kit.fontawesome.com/6478f529f2.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- 'script' should always go last. -->
-  </body>
+        <script
+            src="https://kit.fontawesome.com/6478f529f2.js"
+            crossorigin="anonymous"
+        ></script>
+        <!--* 'script' should always go last. -->
+    </body>
 </html>
 <!-- <a href="https://nykim.work/15
   ">BEM</a> -->
